@@ -141,7 +141,7 @@ table{
 }
 
 thead{
-    background: black;
+    background: #FEFEFE;
     color:white;
     font-weight: bold;
 }
@@ -160,7 +160,7 @@ td,th{
 
 .principal{
     padding: 3em;
-    background: #000000;
+    background: #FEFEFE;
     width: 940px;
     margin: 0 auto; 
 }
