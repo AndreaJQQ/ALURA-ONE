@@ -1,46 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
-    <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desencriptador</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300&display=swap" 
+  rel="stylesheet">
 
-    
+  <script src="https://kit.fontawesome.com/2496d96d1c.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-        <img src="img/Logo.png" alt="logo de alura" class="logo">
-    </header>
 
-    <main>
-        <section>
-            <textarea class="text-area" cols="30" rows="10"placeholder="Ingrese el texto aquí."></textarea>
-            <div>
-                <h6 class="información"> Solo letras minúsculas y sin acento</h6>
+  <header>
+    <div class="hero">
+      <div class="logo">
+        <img src="./img/Logo.png" alt="logo">
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <div class="main-content">
+
+        <!--decoder-->
+        <section>  
+          <!--decoder -textarea-->
+          <div class="decoder">
+            <div class="decoder-textarea">
+              <textarea name="" id="decoder-text" placeholder="Ingrese el código aquí"></textarea>
             </div>
-            <div class="botones">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-
+  
+            <div class="advertencia">
+              <img src="./img/info.png" alt="info" class="advertencia-img">
+              <p> Solo letras minúsculas y sin acentos</p>
             </div>
 
+
+            <!--decoder-buttons-->
+            <div class="decoder-buttons"> 
+              <input id="btnEncoder" type="button" value="Encriptar" class="btn btn-primary">
+              <input id="btnDecoder" type="button" value="Desencriptar" class="btn btn-secondary">
+            </div>
+          </div>
         </section>
-            <textarea class="mensaje" cols="20" rows="14"></textarea>
-            <div>
-                <button class="copiar">Copiar</button>
-            </div>
-        <section>
-            
 
+          <!--result-->
+        <section>
+          <div class="result" id="resultArea">
+
+            <div class="result-show" id="show">
+              <img src="./img/Muñeco.png" alt="imagen no texto ingresado">
+              <div class="result-show-info">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+              </div>
+            </div>
+  
+            <div class="result-textarea" id="textResult">
+              <textarea name="" id="textareaResult"></textarea>
+              <div class="result-button">
+                <input id="btnCopy" type="button" value="Copiar" class="btn btn-copy">
+              </div>
+            </div>
+  
+          </div>
         </section>
-    </main>
-    <script src="/script.js"></script>
+
+      </div>
+    </div>
+  </main>
+ 
+  <footer>
+    <div>
+      <p>
+      Andrea Jalil
+      </p>
+    </div>
+    <div>
+      <a class="iconolink" href="https://www.linkedin.com/in/andrea-jalil-quiroga/"><img src="./img/Linkedin.png" alt="Mi Linkedin" width="40" height="40"></a>
+      <a class="iconolink" href="https://github.com/AndreaJQ"> <img src="./img/github.png"  alt="Mi github" width="40" height="40"></a>
+    </div>
+   
+    
+  </footer>
+
+  <script src="./js/index.js"></script>
+
 </body>
 </html>
-/*probando guardar comentario vscode wb */
